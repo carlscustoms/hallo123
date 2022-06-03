@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screening-plan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="screening-plan.xsd">
+	<actors>
+		<actor birth_country = "United States" birth_date = "1924-04-03" aid="Act1">
+			<first-name>Marlon</first-name>
+			<last-name>Brando</last-name> 
+		</actor>
+		<actor birth_country = "United States" birth_date = "1889-12-25" aid="Act2">
+			<first-name>Humphrey</first-name>
+			<middle-name>DeForest</middle-name>
+			<last-name>Bogart</last-name> 
+		</actor>
+
+		<actor birth_country = "Belgium" birth_date = "1929-05-04" aid="Act3">
+			<first-name>Audrey</first-name>
+			<middle-name>Kathleen</middle-name>
+			<last-name>Hepburn</last-name> 
+		</actor>
+
+		<actor birth_country = "United States" birth_date = "1907-05-12" aid="Act5">
+			<first-name>Katharine</first-name>
+			<last-name>Hepburn</last-name> 
+		</actor>
+		<actor birth_country = "Sweden" birth_date = "1915-08-29" aid="Act4">
+			<first-name>Ingrid</first-name>
+			<last-name>Bergman</last-name> 
+		</actor>
+	</actors>
+
+	<screenings>
+		<cinema>
+			<movie movie_ref = "Apoc3#12#0A0"></movie>
+			<info announcement="2022-04-12">
+				First screening on <premiere-date>2022-06-12</premiere-date> inside room <premiere-room>1</premiere-room>. Next screening on <screening-date>2022-06-13</screening-date> inside room <room>2</room>.
+			</info>
+			<movie movie_ref = "Casa3#12#0A0"></movie>
+			<movie movie_ref = "Spel3#12#0A0"></movie>
+			<info announcement="2022-04-20">
+				First screening on <premiere-date>2022-06-15</premiere-date> inside room <premiere-room>1</premiere-room>. Next screening on <screening-date>2022-06-16</screening-date> inside room <room>2</room>.
+			</info>
+		</cinema>
+		<cinema>
+			<movie movie_ref = "Apoc3#12#0A0"></movie>
+			<info announcement="2022-04-02">
+				First screening on <premiere-date>2022-06-04</premiere-date> inside room <premiere-room>5</premiere-room>. Next screening on <screening-date>2022-06-14</screening-date> inside room <room>8</room> and room <room>9</room>.
+			</info>
+			<movie movie_ref = "Spel3#12#0A0"></movie>
+			<info announcement="2022-04-22">
+				First screening on <premiere-date>2022-06-14</premiere-date> inside room <premiere-room>1</premiere-room>. Next screening on <screening-date>2022-06-18</screening-date> inside room <room>2</room> and room <room>4</room>.
+			</info>
+		</cinema>
+		<cinema>
+			<movie movie_ref = "Casa3#12#0A0"></movie>
+			<info announcement="2022-04-12">
+				First screening on <premiere-date>2022-06-02</premiere-date> inside room <premiere-room>1</premiere-room>. Next screening on <screening-date>2022-06-14</screening-date> inside room <room>2</room>, room <room>3</room> and room <room>4</room>..
+			</info>
+			<movie movie_ref = "Spel3#12#0A0"></movie>
+			<info announcement="2022-04-01">
+				First screening on <premiere-date>2022-06-28</premiere-date> inside room <premiere-room>2</premiere-room>. Next screening on <screening-date>2022-07-02</screening-date> inside room <room>1</room> and room <room>3</room>.
+			</info>
+		</cinema>
+	</screenings>
+	
+	<movies>
+		<movie mid="Apoc3#12#0A0">
+			<name>Apocalypse at Tiffanny's</name>
+			<roles>
+				<main actor_ref="Act1">Brando</main>
+				<support actor_ref="Act3">Audrey</support>
+			</roles>
+			<genre>Comedy</genre>
+		</movie>
+		<movie mid="Casa3#12#0A0">
+			<name>Casablanca</name>
+			<roles>
+				<main actor_ref="Act2">bogart</main>
+				<support actor_ref="Act4">bergman</support>
+			</roles>
+			<genre>Drama</genre>
+		</movie>
+		<movie mid="Afri3#12#0A0">
+			<name>The African Queen</name>
+			<roles>
+				<main actor_ref="Act2">bogart</main>
+				<support actor_ref="Act5">hepburn</support>
+			</roles>
+			<genre>Drama</genre>
+		</movie>
+		<movie mid="Lonel#12#0A0">
+			<name>In a Lonely Place</name>
+			<roles>
+				<main actor_ref="Act2">bogart</main>
+			</roles>
+			<genre>Drama</genre>
+		</movie>
+		<movie mid="Spel3#12#0A0">
+			<name>Spellbound Charade on the Waterfront</name>
+			<roles>
+				<main actor_ref="Act4">bergman</main>
+				<support actor_ref="Act3">Audrey</support>
+				<support actor_ref="Act1">brando</support>
+			</roles>
+			<genre>Action</genre>
+		</movie>	
+	</movies>
+</screening-plan>

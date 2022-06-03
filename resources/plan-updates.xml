@@ -1,0 +1,13 @@
+<plan-update>
+	<update>
+		<movie name="Random Movie" genre="Comedy"/>
+		<actor first-name="Max" last-name="Mustermann" birth-date="1924-04-03" birth-country="Belgium" role="main">
+		</actor>
+		<actor first-name="Martha" last-name="Musterfrau" birth-date="1924-04-04" birth-country="Netherlands" role="support">
+		</actor>
+	</update>
+	<delete>
+		<movie mid="Apoc3#12#0A0"/>
+		<actor aid="Act2"/>
+	</delete>
+</plan-update>
