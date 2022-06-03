@@ -1,5 +1,6 @@
 (: Your XQuery goes here :)
 
+
 <dramaticActors>{
 
 for $r in doc("/Users/bernhardcerncic/Documents/Uni/SEMI/UE2/template-2/resources/screening-plan-xsd.xml")/screening-plan/actors/actor[
