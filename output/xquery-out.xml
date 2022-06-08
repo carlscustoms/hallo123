@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><dramaticActors><actor born-in="United States" name="Humphrey Bogart"><movieCount>3</movieCount><movie co-actors="2"><first-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Humphrey</first-name><last-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Bogart</last-name></movie><movie co-actors="2"><first-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Katharine</first-name><last-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Hepburn</last-name></movie><movie co-actors="2"><first-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Ingrid</first-name><last-name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Bergman</last-name></movie></actor></dramaticActors>
+<?xml version="1.0" encoding="UTF-8"?>
+<dramaticActors>
+    <actor born-in="United States" name="Humphrey Bogart">
+        <movieCount>3</movieCount>
+        <movie co-actors="2"/>
+        <movie co-actors="2"/>
+        <movie co-actors="2"/>
+    </actor>
+</dramaticActors>

@@ -17,7 +17,7 @@
 
 	<!-- XQuery -->
     <property name="xquery.inputpath" value="${resources.dir}/screening-plan-xsd.xml"/>
-    <property name="xquery.querypath" value="${src.dir}/xquery.xq"/>
+    <property name="xquery.querypath" value="${src.dir}/xquery2.xq"/>
     <property name="xquery.outputpath" value="${output.dir}/xquery-out.xml"/>
 	
 	<!-- Xslt -->
