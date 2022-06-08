@@ -66,46 +66,50 @@ public class SSD {
      */
     private static void transform(String inputPath, String updatePath, String outputPath) throws Exception {
         // Read in the data from the vaccination-plan xml document, created in Exercise Sheet 1
-    	
-    	
-        
-        
+        Document spDoc = documentBuilder.parse(new File(inputPath));
+
+
         // Create an input source for the batch-delivery document
+        InputSource batchdeliveryInputSource = new InputSource(new FileInputStream(batchdeliveryPath));
 
+        XMLReader xr = XMLReaderFactory.createXMLReader();
+        SPHandler bh = new SPHandler(spDoc);
+        xr.setContentHandler(bh);
 
-		
 
         // start the actual parsing
-        
-	   
-        
-       
+        xr.parse(batchdeliveryInputSource);
+
+
         // Validate file before storing        
-			
-		
-		
-		
-        
-        
-        // get the document from the VPHandler
-        
-		
-		
-		
-        
+        File schemaFile = new File("resources/vaccination-plan.xsd");
+        SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+        Schema schema = schemaFactory.newSchema(schemaFile);
+        Validator validator = schema.newValidator();
+
+
+        // get the document from the SPHandler
+        spDoc = bh.getDocument();
+        DOMSource source = new DOMSource(spDoc);
+
+
         //validate
-        
-		
-		
-		
-		
-        
+        try {
+            validator.validate(new DOMSource(spDoc));
+        } catch (SAXException ex) {
+
+
+            exit("Created document not valid!" + '\n' + ex.getMessage());
+        }
+
+
         //store the document
-        
-		
-		
-		
-		
+        StreamResult result = new StreamResult(new File(outputPath));
+        TransformerFactory tFactory = TransformerFactory.newInstance();
+        Transformer transformer = tFactory.newTransformer();
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+        transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+        transformer.transform(source, result);
     }
 
     /**
